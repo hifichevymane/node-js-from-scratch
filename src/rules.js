@@ -1,14 +1,4 @@
-import { pub } from "./pubsub.js";
-
-setInterval(() => {
-  pub('everyFiveSeconds');
-}, 5e3);
-
 export default [
-  ['everyFiveSeconds', () => {
-    console.log('Do something in 5 seconds');
-  }],
-
   ['/', () => {
     console.count('visit');
   }],
